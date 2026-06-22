@@ -147,32 +147,17 @@
     </div>
 
     <!-- FORM -->
-    <div class="card" id="formSection">
-      <h3>Give Your Feedback</h3>
+    <form action="https://formspree.io/f/your-id" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required><br><br>
 
-      <form>
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
+  <input type="email" name="email" placeholder="Your Email" required><br><br>
 
-        <textarea placeholder="Biggest problem while studying?" required></textarea><br><br>
-        <textarea placeholder="What scares you in studies?"></textarea><br><br>
-        <textarea placeholder="Why do you struggle to understand concepts?"></textarea><br><br>
+  <textarea name="problem" placeholder="Biggest problem while studying?" required></textarea><br><br>
 
-        <label>What do you do when you don’t understand?</label><br>
-        <select>
-          <option>Ignore</option>
-          <option>YouTube</option>
-          <option>Friends</option>
-          <option>Teacher</option>
-        </select><br><br>
+  <textarea name="fear" placeholder="What scares you in studies?"></textarea><br><br>
 
-        <label>What distracts you most?</label><br>
-        <select>
-          <option>Mobile</option>
-          <option>Social Media</option>
-          <option>Overthinking</option>
-          <option>Boredom</option>
-        </select><br><br>
+  <button class="btn" type="submit">Submit</button>
+</form>
 
         <button class="btn">Submit</button>
       </form>
