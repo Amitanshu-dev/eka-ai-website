@@ -112,7 +112,9 @@
     </p>
 
     <!-- BUTTON -->
-    <button class="btn" onclick="document.getElementById('formSection').scrollIntoView({behavior:'smooth'})">
+    <button class="btn" type="button" onclick="scrollToForm()">
+  Give Your Feedback
+</button>
       Give Your Feedback
     </button>
 
@@ -147,7 +149,7 @@
     </div>
 
     <!-- FORM -->
-    <form action="https://formspree.io/f/your-id" method="POST">
+    <form action="https://formspree.io/f/realekaai@gmail.com" method="POST">
   <input type="text" name="name" placeholder="Your Name" required><br><br>
 
   <input type="email" name="email" placeholder="Your Email" required><br><br>
@@ -184,6 +186,13 @@
       }
     }, 1000);
   </script>
+  <script>
+function scrollToForm() {
+  document.getElementById("formSection").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
 
 </body>
 </html>
